@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\Demo\Demo.cpp" />
+    <ClCompile Include="..\Src\Quant\Diagnostics\TLogger.cpp" />
+    <ClCompile Include="..\Src\Quant\Diagnostics\TLoggerHelpers.cpp" />
+    <ClCompile Include="..\Src\Quant\Diagnostics\TMainLoggerHelpers.cpp" />
+    <ClCompile Include="..\Src\Quant\InputOutput\TFileSystemHelpers.cpp" />
+    <ClCompile Include="..\Src\Quant\Text\TTextHelpers.cpp" />
+    <ClCompile Include="..\Src\Quant\Time\TMainUtcToLocalLinuxDateTimeConverterHelpers.cpp" />
+    <ClCompile Include="..\Src\Quant\Time\TMainUtcToLocalWindowsDateTimeConverterHelpers.cpp" />
+    <ClCompile Include="..\Src\Quant\Time\TTimeHelpers.cpp" />
+    <ClCompile Include="..\Src\Quant\Time\TUtcToLocalLinuxDateTimeConverter.cpp" />
+    <ClCompile Include="..\Src\Quant\Time\TUtcToLocalWindowsDateTimeConverter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\Demo\pch.h" />
+    <ClInclude Include="..\Src\Quant\Diagnostics\pch.h" />
+    <ClInclude Include="..\Src\Quant\Diagnostics\TLogger.hpp" />
+    <ClInclude Include="..\Src\Quant\Diagnostics\TLoggerHelpers.hpp" />
+    <ClInclude Include="..\Src\Quant\Diagnostics\TMainLoggerHelpers.hpp" />
+    <ClInclude Include="..\Src\Quant\InputOutput\pch.h" />
+    <ClInclude Include="..\Src\Quant\InputOutput\TFileSystemHelpers.hpp" />
+    <ClInclude Include="..\Src\Quant\pch.h" />
+    <ClInclude Include="..\Src\Quant\Text\pch.h" />
+    <ClInclude Include="..\Src\Quant\Text\TTextHelpers.hpp" />
+    <ClInclude Include="..\Src\Quant\Time\pch.h" />
+    <ClInclude Include="..\Src\Quant\Time\TMainUtcToLocalLinuxDateTimeConverterHelpers.hpp" />
+    <ClInclude Include="..\Src\Quant\Time\TMainUtcToLocalWindowsDateTimeConverterHelpers.hpp" />
+    <ClInclude Include="..\Src\Quant\Time\TTimeHelpers.hpp" />
+    <ClInclude Include="..\Src\Quant\Time\TUtcToLocalLinuxDateTimeConverter.hpp" />
+    <ClInclude Include="..\Src\Quant\Time\TUtcToLocalWindowsDateTimeConverter.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{d64bdef7-e083-461e-9889-fd7af457adf8}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>LinuxDemo</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <MultiProcNumber>3</MultiProcNumber>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <MultiProcNumber>3</MultiProcNumber>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <CppLanguageStandard>c++17</CppLanguageStandard>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>pthread</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <CppLanguageStandard>c++17</CppLanguageStandard>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>pthread</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

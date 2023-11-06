@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{9f078363-2b6c-4878-a530-9176dae4f07e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Demo">
+      <UniqueIdentifier>{23c7bc73-c189-4090-a467-e4f98d8ee22d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Quant">
+      <UniqueIdentifier>{158e8374-f512-4317-bd24-c2c7e511ce98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Quant\Diagnostics">
+      <UniqueIdentifier>{89032bfa-98d3-425a-bb89-d8e4bcef39c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Quant\Time">
+      <UniqueIdentifier>{eb9970e9-38fd-4384-b7e5-b732c1b21738}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Quant\Text">
+      <UniqueIdentifier>{e90e9d66-40ac-4b72-94a6-410585d36263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Quant\InputOutput">
+      <UniqueIdentifier>{e004cb89-cc3f-451a-af5a-c3ca2a496d13}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\Demo\Demo.cpp">
+      <Filter>Src\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Quant\Diagnostics\TLogger.cpp">
+      <Filter>Src\Quant\Diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Quant\Diagnostics\TLoggerHelpers.cpp">
+      <Filter>Src\Quant\Diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Quant\Diagnostics\TMainLoggerHelpers.cpp">
+      <Filter>Src\Quant\Diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Quant\Time\TTimeHelpers.cpp">
+      <Filter>Src\Quant\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Quant\Time\TUtcToLocalLinuxDateTimeConverter.cpp">
+      <Filter>Src\Quant\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Quant\Time\TUtcToLocalWindowsDateTimeConverter.cpp">
+      <Filter>Src\Quant\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Quant\Text\TTextHelpers.cpp">
+      <Filter>Src\Quant\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Quant\InputOutput\TFileSystemHelpers.cpp">
+      <Filter>Src\Quant\InputOutput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Quant\Time\TMainUtcToLocalLinuxDateTimeConverterHelpers.cpp">
+      <Filter>Src\Quant\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Quant\Time\TMainUtcToLocalWindowsDateTimeConverterHelpers.cpp">
+      <Filter>Src\Quant\Time</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\Demo\pch.h">
+      <Filter>Src\Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Quant\pch.h">
+      <Filter>Src\Quant</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Quant\Diagnostics\TLogger.hpp">
+      <Filter>Src\Quant\Diagnostics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Quant\Diagnostics\TLoggerHelpers.hpp">
+      <Filter>Src\Quant\Diagnostics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Quant\Diagnostics\TMainLoggerHelpers.hpp">
+      <Filter>Src\Quant\Diagnostics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Quant\Diagnostics\pch.h">
+      <Filter>Src\Quant\Diagnostics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Quant\Time\pch.h">
+      <Filter>Src\Quant\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Quant\Time\TTimeHelpers.hpp">
+      <Filter>Src\Quant\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Quant\Time\TUtcToLocalLinuxDateTimeConverter.hpp">
+      <Filter>Src\Quant\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Quant\Time\TUtcToLocalWindowsDateTimeConverter.hpp">
+      <Filter>Src\Quant\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Quant\Text\pch.h">
+      <Filter>Src\Quant\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Quant\Text\TTextHelpers.hpp">
+      <Filter>Src\Quant\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Quant\InputOutput\pch.h">
+      <Filter>Src\Quant\InputOutput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Quant\InputOutput\TFileSystemHelpers.hpp">
+      <Filter>Src\Quant\InputOutput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Quant\Time\TMainUtcToLocalLinuxDateTimeConverterHelpers.hpp">
+      <Filter>Src\Quant\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Quant\Time\TMainUtcToLocalWindowsDateTimeConverterHelpers.hpp">
+      <Filter>Src\Quant\Time</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
