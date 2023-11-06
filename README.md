@@ -1,4 +1,4 @@
-# HighPerformanceHighTimeResolutionLoggerCpp
+# High Performance High Time Resolution Logger C++
 
 `Quant::Diagnostics::TLogger` is a C++ class that is a super fast logger that allows an app to log its activities to a file. It captures and formats log record date-time-stamps in 100 nanoseconds resolution. It builds on both Linux and Windows.
 
