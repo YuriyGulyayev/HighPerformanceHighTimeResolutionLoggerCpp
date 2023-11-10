@@ -4,4 +4,4 @@
 
 This is a Visual Studio solution that builds on both Linux and Windows.
 
-I developed this solution for a client of mine in May 2019, but, unfortunately, the client has died before they got a chance to pay me. So I am not making anyone's intellectual property public here.
+I developed this for a client of mine in May 2019, but, unfortunately, the client has died before they got a chance to pay me. So I am not making anyone's intellectual property public here.
